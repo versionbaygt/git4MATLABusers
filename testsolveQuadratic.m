@@ -20,6 +20,24 @@ classdef testsolveQuadratic < matlab.unittest.TestCase
             testCase.verifyEqual(act,exp', "RelTol", 1e-16)
             
         end
+        function comparewithrootsbZeroTest(testCase)
+            a = 10;
+            b = 0;
+            c = 1;
+            act = solveQuadratic(a,b,c);
+            exp = roots([a,b,c]);
+            testCase.verifyEqual(act,exp', "RelTol", 1e-16)
+            
+        end
+        function comparewithrootsaZeroTest(testCase)
+            a = 0;
+            b = 3;
+            c = 1;
+            act = solveQuadratic(a,b,c);
+            exp = roots([a,b,c]);
+            testCase.verifyEqual(act,exp', "RelTol", 1e-16)
+            
+        end
     end
 
 end
