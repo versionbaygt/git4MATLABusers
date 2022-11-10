@@ -2,7 +2,7 @@
 % calculate the root of ax^2+bx+c=0
 
 a = 10;
-b = 3;
+b = 4;
 c = 1;
 
 solveQuadratic(a, b, c);
