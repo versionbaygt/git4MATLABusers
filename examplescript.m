@@ -5,4 +5,4 @@ a = 10;
 b = 3;
 c = 1;
 
-solveQuadratic(b, a, c);
+solveQuadratic(a, b, c);
