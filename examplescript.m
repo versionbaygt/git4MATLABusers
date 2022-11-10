@@ -5,4 +5,5 @@ a = 10;
 b = 4;
 c = 1;
 
-solveQuadratic(a, b, c);
+x = solveQuadratic(a, b, c);
+y = roots([a,b,c]);
